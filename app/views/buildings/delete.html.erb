@@ -1,0 +1,11 @@
+
+<br>
+<h1>Borrar Edificio</h1>
+<%= form_for(@building, :method => "delete") do |f| %>
+<%= @building.nombre_edificio %>
+<h2>Estás seguro?</h2>
+<%= f.submit "Borrar Edificio" %>
+<br><br>
+<button><%= link_to "Volver", :back %></button>
+<% end %>
+

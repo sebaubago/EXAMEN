@@ -1,0 +1,13 @@
+<br>
+<h1>Editando información del Departamento</h1>
+<%= form_for @apartment do |f| %>
+    <%= f.label :numero_depto %>
+    <%= f.text_field :numero_depto %>
+    <br><br>
+    <%= f.label :building_id %>
+    <%= f.text_field :building_id %>
+    <br><br>
+    <%= f.submit "Actualizar información" %>
+    <br><br>
+    <button><%= link_to "Volver", apartments_path %></button>
+<% end %>

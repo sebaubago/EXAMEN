@@ -1,0 +1,11 @@
+<br>
+<h1>Información del Edificio</h1>
+<h2><%= @building.nombre_edificio %></h2>
+<p><%= @building.direccion %></p>
+<p><%= @building.ciudad %></p>
+<h3>Información de los departamentos</h3>
+<% @apartment.each do |ap|%>
+<p><%= ap.numero_depto %></p>
+<br>
+<% end %>
+<button><%= link_to "Volver", :back %></button>

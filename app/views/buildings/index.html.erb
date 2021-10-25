@@ -1,0 +1,25 @@
+<br>
+<h1>Listado de Edificios</h1>
+<table>
+    <tr>
+        <th>Edificio</th>
+        <th>Dirección</th>
+        <th>Ciudad</th>
+        <th>Acciones</th>
+    </tr>
+
+<% @buildings.each do |building| %>
+<tr>
+<td><%=building.nombre_edificio %></td>
+<td><%=building.direccion %></td>
+<td><%=building.ciudad %></td>
+<td>
+<button><%= link_to "Ver", building %></button>
+<button><%= link_to "Editar", edit_building_path(building) %></button>
+<button><%= link_to "Borrar", delete_building_path(building) %></button>
+</td>
+</tr>
+<% end %>
+</table>
+<br>
+<button><%= link_to "Crear nuevo Edificio", new_building_path %></button>

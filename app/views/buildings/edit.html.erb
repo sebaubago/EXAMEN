@@ -1,0 +1,13 @@
+<br>
+<h1>Editando información del Edificio</h1>
+<%= form_for @building do |f| %>
+    <p><%= f.label :nombre_edificio %></p>
+    <p><%= f.text_field :nombre_edificio %></p>
+    <p><%= f.label :direccion %></p>
+    <p><%= f.text_field :direccion %></p>
+    <p><%= f.label :ciudad %></p>
+    <p><%= f.text_field :ciudad %></p>
+    <%= f.submit "Actualizar información" %>
+    <br><br>
+    <button><%= link_to "Volver", buildings_path %></button>
+<% end %>

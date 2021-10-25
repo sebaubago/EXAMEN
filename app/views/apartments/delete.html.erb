@@ -1,0 +1,9 @@
+<br>
+<h1>Borrar Departamento</h1>
+<%= form_for(@apartment, :method => "delete") do |f| %>
+<%= @apartment.numero_depto %>
+<h2>Estás seguro?</h2>
+<%= f.submit "Borrar Departamento" %>
+<br><br>
+<button><%= link_to "Volver", :back %></button>
+<% end %>
